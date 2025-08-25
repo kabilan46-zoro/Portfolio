@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+}
+
+header.hero {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 2em;
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+.intro, .contact, .gallery {
+  padding: 2em;
+  text-align: center;
+}
+
+.highlight {
+  color: #ee0979;
+  font-weight: bold;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item img, .item video {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img:hover, .item video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
